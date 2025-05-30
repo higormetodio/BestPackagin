@@ -14,4 +14,9 @@ public class Box
     public int Id { get; private set; }
     public string Description { get; private set; }
     public Dimension Dimension { get; private set; }
+
+    public int CalculateBoxVolume()
+    {
+        return Dimension.Height * Dimension.Width * Dimension.Length;
+    }
 }
